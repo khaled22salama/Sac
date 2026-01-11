@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sponsor Us - Sac Pathways</title>
+  <link rel="icon" type="image/png" href="../assets/Logo.png" />
+  <meta name="description" content="Partner with Sac Pathways to support students through mentorship and opportunity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles-sponsor.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html#home">
+        <img class="brand__logo" src="../assets/Logo.png" alt="Sac Pathways logo" />
+        <span class="sr-only">Sac Pathways</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav__hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="../index.html#home">Home</a></li>
+          <li><a class="nav__link" href="../about/about.html">About Us</a></li>
+          <li><a class="nav__link" href="../events/events.html#event-details">Events</a></li>
+          <li><a class="nav__link" href="../get-involved/get-involved.html">Mentors and Volunteers</a></li>
+          <li><a class="nav__link nav__link--active" href="../sponsor/sponsor.html">Sponsor Us</a></li>
+          <li class="nav__cta">
+            <a class="btn btn--primary" href="../mentee/mentee.html">Register as Mentee</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="sponsor">
+    <section class="section">
+      <div class="container split split--mentor">
+        <div class="mentor__intro">
+          <h2 class="sectionTitle sectionTitle--left">Sponsor Us</h2>
+          <p class="lead">Partner with Sac Pathways to open doors for students through mentorship, opportunity, and community.</p>
+          <ul class="mentor__bullets">
+            <li>Custom sponsorship opportunities</li>
+            <li>Aligned impact reporting</li>
+            <li>Responsive follow-up from our team</li>
+          </ul>
+          <div class="sponsor-cards">
+            <article class="sponsor-card">
+              <p class="sponsor-card__eyebrow">Mission &amp; Impact</p>
+              <p class="sponsor-card__text">At Sac Pathways, we believe that mentorship changes lives. Your sponsorship directly supports students by providing access to guidance, educational resources, and real-world opportunities that help them succeed academically, professionally, and personally.</p>
+            </article>
+            <article class="sponsor-card">
+              <p class="sponsor-card__eyebrow">Why Sponsorship Matters</p>
+              <p class="sponsor-card__text">By partnering with us, you are investing in more than a program -- you are investing in potential. Sponsors play a vital role in expanding our mentorship programs, hosting impactful events, and ensuring that students from diverse backgrounds have the support they need to build confident futures.</p>
+            </article>
+            <article class="sponsor-card">
+              <p class="sponsor-card__eyebrow">Invitation to Partner</p>
+              <p class="sponsor-card__text">Whether you are a company, organization, or individual, we welcome partners who share our commitment to education, equity, and community growth. Fill out the form to start a conversation about how we can create meaningful impact together.</p>
+            </article>
+          </div>
+        </div>
+
+        <form class="form form--steps" id="sponsorForm" aria-label="Sponsorship inquiry form" action="" method="post">
+          <div class="form__progress" aria-live="polite">
+            <p class="form__progressText" data-progress-text>Step 1 of 4 - ~2 minutes</p>
+            <p class="form__progressHint">Progress saves automatically.</p>
+            <ol class="form__steps" aria-label="Application steps">
+              <li class="form__stepLabel is-active" data-step-label="1">Sponsor Type</li>
+              <li class="form__stepLabel" data-step-label="2">Contact</li>
+              <li class="form__stepLabel" data-step-label="3">Interest</li>
+              <li class="form__stepLabel" data-step-label="4">Details</li>
+            </ol>
+            <div class="form__progressBar" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1">
+              <span class="form__progressFill" data-progress-fill></span>
+            </div>
+          </div>
+
+          <div class="form__step is-active" data-step="1" data-time="~2 minutes">
+            <h3 class="form__title">Step 1: Sponsor Type & Organization</h3>
+            <p class="form__meta">Estimated time: ~2 minutes</p>
+
+            <div class="form__group">
+              <p class="field__label">Sponsor type <span class="field__tag field__tag--required">Required</span></p>
+              <p class="field__help">Quick qualification to tailor follow-up.</p>
+              <div class="field__checks">
+                <label class="field__check"><input type="radio" name="sponsor_type" value="Corporate / Company" required /> <span>Corporate / Company</span></label>
+                <label class="field__check"><input type="radio" name="sponsor_type" value="Individual Donor" /> <span>Individual Donor</span></label>
+                <label class="field__check"><input type="radio" name="sponsor_type" value="Foundation / Nonprofit" /> <span>Foundation / Nonprofit</span></label>
+                <label class="field__check"><input type="radio" name="sponsor_type" value="Educational Institution" /> <span>Educational Institution</span></label>
+                <label class="field__check"><input type="radio" name="sponsor_type" value="Other" /> <span>Other</span></label>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Organization / Sponsor Information</h4>
+              <label class="field">
+                <span class="field__label">Organization / Company Name <span class="field__tag field__tag--required">Required</span></span>
+                <input class="field__input" type="text" name="organization_name" placeholder="Organization name" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Website <span class="field__tag">Optional</span></span>
+                <input class="field__input" type="url" name="website" placeholder="https://example.com" />
+              </label>
+              <label class="field">
+                <span class="field__label">Industry / Sector <span class="field__tag">Optional</span></span>
+                <input class="field__input" type="text" name="industry" placeholder="Education, technology, healthcare, etc." />
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg" type="button" data-next>Continue</button>
+            </div>
+          </div>
+
+          <div class="form__step" data-step="2" data-time="~2 minutes">
+            <h3 class="form__title">Step 2: Primary Contact</h3>
+            <p class="form__meta">Estimated time: ~2 minutes</p>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Primary Contact Information</h4>
+              <label class="field">
+                <span class="field__label">Full Name <span class="field__tag field__tag--required">Required</span></span>
+                <input class="field__input" type="text" name="full_name" placeholder="Full name" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Job Title / Role <span class="field__tag">Optional</span></span>
+                <input class="field__input" type="text" name="job_title" placeholder="Title or role" />
+              </label>
+              <label class="field">
+                <span class="field__label">Email Address <span class="field__tag field__tag--required">Required</span></span>
+                <input class="field__input" type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Phone Number <span class="field__tag">Optional</span></span>
+                <input class="field__input" type="tel" name="phone" placeholder="(000) 000-0000" />
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--secondary btn--lg" type="button" data-prev>Back</button>
+              <button class="btn btn--primary btn--lg" type="button" data-next>Continue</button>
+            </div>
+          </div>
+
+          <div class="form__step" data-step="3" data-time="~2 minutes">
+            <h3 class="form__title">Step 3: Sponsorship Interest</h3>
+            <p class="form__meta">Estimated time: ~2 minutes</p>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Sponsorship Interest</h4>
+              <p class="field__help">Choose all that apply.</p>
+              <div class="field__checks">
+                <label class="field__check"><input type="checkbox" name="support_type" value="Financial sponsorship" /> <span>Financial sponsorship</span></label>
+                <label class="field__check"><input type="checkbox" name="support_type" value="Event sponsorship" /> <span>Event sponsorship</span></label>
+                <label class="field__check"><input type="checkbox" name="support_type" value="Program sponsorship" /> <span>Program sponsorship</span></label>
+                <label class="field__check"><input type="checkbox" name="support_type" value="In-kind donation" /> <span>In-kind donation (services, tools, space, etc.)</span></label>
+                <label class="field__check"><input type="checkbox" name="support_type" value="Employee mentorship / volunteering" /> <span>Employee mentorship / volunteering</span></label>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Sponsorship Level / Budget</h4>
+              <label class="field">
+                <span class="field__label">Estimated budget <span class="field__tag">Optional</span></span>
+                <select class="field__input" name="budget_level">
+                  <option value="" selected>Choose one (optional)</option>
+                  <option>Under $1,000</option>
+                  <option>$1,000 - $5,000</option>
+                  <option>$5,000 - $10,000</option>
+                  <option>$10,000+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Timeline</h4>
+              <label class="field">
+                <span class="field__label">When are you looking to engage?</span>
+                <select class="field__input" name="timeline">
+                  <option value="" selected>Choose one</option>
+                  <option>Immediately</option>
+                  <option>Within 1-3 months</option>
+                  <option>Later this year</option>
+                  <option>Just exploring options</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--secondary btn--lg" type="button" data-prev>Back</button>
+              <button class="btn btn--primary btn--lg" type="button" data-next>Continue</button>
+            </div>
+          </div>
+
+          <div class="form__step" data-step="4" data-time="~2 minutes">
+            <h3 class="form__title">Step 4: Motivation & Details</h3>
+            <p class="form__meta">Estimated time: ~2 minutes</p>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Motivation & Alignment</h4>
+              <label class="field">
+                <span class="field__label">What motivates you to support Sac Pathways?</span>
+                <textarea class="field__input field__input--area" name="motivation" rows="3" placeholder="Tell us what excites you about our mission or what impact you are hoping to make."></textarea>
+              </label>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Preferred Engagement</h4>
+              <p class="field__help">Optional preferences to help us personalize outreach.</p>
+              <div class="field__checks">
+                <p class="field__label">Preferred form of recognition <span class="field__tag">Optional</span></p>
+                <label class="field__check"><input type="checkbox" name="recognition" value="Logo on website" /> <span>Logo on website</span></label>
+                <label class="field__check"><input type="checkbox" name="recognition" value="Event recognition" /> <span>Event recognition</span></label>
+                <label class="field__check"><input type="checkbox" name="recognition" value="Social media mention" /> <span>Social media mention</span></label>
+                <label class="field__check"><input type="checkbox" name="recognition" value="Private impact report" /> <span>Private impact report</span></label>
+              </div>
+              <div class="field__checks">
+                <p class="field__label">Preferred contact method <span class="field__tag">Optional</span></p>
+                <label class="field__check"><input type="radio" name="contact_method" value="Email" /> <span>Email</span></label>
+                <label class="field__check"><input type="radio" name="contact_method" value="Phone" /> <span>Phone</span></label>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Additional Notes</h4>
+              <label class="field">
+                <span class="field__label">Additional comments</span>
+                <textarea class="field__input field__input--area" name="additional_notes" rows="3" placeholder="Share anything else that would be helpful."></textarea>
+              </label>
+            </div>
+
+            <div class="form__group">
+              <p class="field__label">Consent & Trust <span class="field__tag field__tag--required">Required</span></p>
+              <label class="field__check">
+                <input type="checkbox" name="consent" value="I agree" required />
+                <span>I agree to be contacted by Sac Pathways regarding sponsorship opportunities.</span>
+              </label>
+              <p class="field__help">Review our <a href="#">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--secondary btn--lg" type="button" data-prev>Back</button>
+              <button class="btn btn--primary btn--lg" type="submit">Start a Sponsorship Conversation</button>
+            </div>
+            <p class="form__note" id="sponsorFormNote" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="form__overlay" id="sponsorConfirm" role="dialog" aria-modal="true" aria-labelledby="sponsorConfirmTitle" hidden>
+      <div class="form__modal">
+        <h3 id="sponsorConfirmTitle">Thanks for reaching out!</h3>
+        <p>Thank you for your interest in supporting Sac Pathways. Our team will reach out shortly to explore how we can work together.</p>
+        <div class="form__modalActions">
+          <button class="btn btn--secondary btn--lg" type="button" data-modal-close>Close</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__section footer__section--brand">
+      <img class="footer__logoImage" src="../assets/Logo.png" alt="Sac Pathways logo" />
+      <p class="footer__logo">Sac Pathways</p>
+      <p class="footer__mission">Sac Pathways connects students with mentorship, opportunity, and community to build confident futures.</p>
+      
+      <p class="footer__proof">Trusted by mentors, alumni, and local partners.</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Sac Pathways. All rights reserved.</p>
+    </div>
+
+    <div class="footer__section footer__section--social">
+      <div class="footer__links" aria-label="Social">
+        <a class="footer__link" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H8v4h2v6h4v-6h3l1-4h-4V8c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5H3v11h3.5v-11Zm.2-3.6A2.1 2.1 0 0 0 4.6 3.8a2.1 2.1 0 0 0-.1 3 2.1 2.1 0 0 0 3 0c.8-.8.8-2.2-.1-3Zm6.8 3.6H10v11h3.5v-6.1c0-1.6.8-2.6 2.1-2.6 1.2 0 1.9.9 1.9 2.6v6.1H21v-7c0-2.8-1.5-4.3-3.8-4.3-1.7 0-2.8.8-3.4 1.9V9.5Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Zm8 2H8a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-4 3.3A2.7 2.7 0 1 1 9.3 12 2.7 2.7 0 0 1 12 9.3Zm0 1.4A1.3 1.3 0 1 0 13.3 12 1.3 1.3 0 0 0 12 10.7Zm3.5-3.7a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Z"/></svg>
+        </a>
+      </div>
+      <div class="footer__col footer__accordion">
+        <details class="footer__details">
+          <summary class="footer__summary">Quick Links</summary>
+          <ul class="footer__list">
+            <li><a class="footer__linkText" href="#home">Home</a></li>
+            <li><a class="footer__linkText" href="../about/about.html">About Us</a></li>
+            <li><a class="footer__linkText" href="../events/events.html#event-details">Events</a></li>
+            <li><a class="footer__linkText" href="../sponsor/sponsor.html">Sponsor Us</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="footer__section footer__section--mentors">
+      <h3 class="footer__title">Mentors and Volunteers</h3>
+      <ul class="footer__list">
+        <li><a class="footer__linkText" href="../get-involved/get-involved.html">Become a Mentor</a></li>
+        <li><a class="footer__linkText" href="../mentee/mentee.html">Register as Mentee</a></li>
+        <li><a class="footer__linkText" href="../get-involved/get-involved.html">Partner With Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section footer__section--newsletter">
+      <h3 class="footer__title">Newsletter</h3>
+      <p class="footer__headline">Stay Connected With Sac Pathways</p>
+      <p class="footer__contact">Contact: <a class="footer__linkText" href="mailto:sac.pathways@gmail.com">sac.pathways@gmail.com</a></p>
+      <p class="footer__text">Get updates, events, and mentorship stories.</p>
+      <form class="footer__form" action="" method="post">
+        <input class="footer__input" type="email" name="newsletter_email" placeholder="Email address" aria-label="Email address" required />
+        <button class="btn btn--primary btn--sm" type="submit">Subscribe</button>
+      </form>
+      <p class="footer__note">No spam. 1-2 emails/month.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="./script-sponsor.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

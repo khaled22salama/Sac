@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sac Pathways - Mentee Registration</title>
+  <link rel="icon" type="image/png" href="../assets/Logo.png" />
+  <meta name="description" content="Mentee registration for Sac Pathways." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles-mentee.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html#home">
+        <img class="brand__logo" src="../assets/Logo.png" alt="Sac Pathways logo" />
+        <span class="sr-only">Sac Pathways</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav__hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="../index.html#home">Home</a></li>
+          <li><a class="nav__link" href="../about/about.html">About Us</a></li>
+          <li><a class="nav__link" href="../events/events.html#event-details">Events</a></li>
+          <li><a class="nav__link" href="../get-involved/get-involved.html">Mentors and Volunteers</a></li>
+          <li><a class="nav__link" href="../sponsor/sponsor.html">Sponsor Us</a></li>
+          <li class="nav__cta">
+            <a class="btn btn--primary" href="../mentee/mentee.html">Register as Mentee</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main id="mentee">
+    <section class="section">
+      <div class="container split split--mentee">
+        <div class="mentee__intro">
+          <h2 class="sectionTitle sectionTitle--left">Mentee Registration</h2>
+          <p class="lead">This takes about 5 minutes. We will help match you with the right mentor.</p>
+          <ul class="mentor__bullets">
+            <li>Free to join</li>
+            <li>Flexible scheduling</li>
+            <li>Support from Sac Pathways team</li>
+          </ul>
+        </div>
+
+        <form class="form form--steps" id="mentee" aria-label="Mentee registration form" action="" method="post">
+          <div class="form__progress" aria-live="polite">
+            <p class="form__progressText" data-progress-text>Step 1 of 3 - ~2 minutes</p>
+            <p class="form__progressHint">Progress saves automatically.</p>
+            <ol class="form__steps" aria-label="Application steps">
+              <li class="form__stepLabel is-active" data-step-label="1">About You</li>
+              <li class="form__stepLabel" data-step-label="2">Your Goals</li>
+              <li class="form__stepLabel" data-step-label="3">Availability and Preferences</li>
+            </ol>
+            <div class="form__progressBar" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1">
+              <span class="form__progressFill" data-progress-fill></span>
+            </div>
+          </div>
+
+          <div class="form__step is-active" data-step="1" data-time="~2 minutes">
+            <h3 class="form__title">Step 1: About You</h3>
+            <p class="form__meta">Estimated time: ~2 minutes</p>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Basic info</h4>
+              <label class="field">
+                <span class="field__label">Full name <span class="field__tag field__tag--required">Required</span></span>
+                <input class="field__input" type="text" name="name" placeholder="Jordan Lee" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Email <span class="field__tag field__tag--required">Required</span></span>
+                <input class="field__input" type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Age range <span class="field__tag field__tag--required">Required</span></span>
+                <select class="field__input" name="age_range" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Under 18</option>
+                  <option>18-22</option>
+                  <option>23-30</option>
+                  <option>31+</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field__label">Country <span class="field__tag field__tag--required">Required</span></span>
+                <input class="field__input" type="text" name="country" placeholder="United States" required />
+              </label>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Background (optional)</h4>
+              <label class="field">
+                <span class="field__label">Background or demographics <span class="field__tag">Optional</span></span>
+                <p class="field__help">Optional - used only to improve matching.</p>
+                <input class="field__input" type="text" name="background" placeholder="First-gen student, immigrant background, etc." />
+              </label>
+              <label class="field">
+                <span class="field__label">Education (major or highest level) <span class="field__tag">Optional</span></span>
+                <input class="field__input" type="text" name="education" placeholder="High school, biology major, etc." />
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg" type="button" data-next>Continue</button>
+            </div>
+          </div>
+
+          <div class="form__step" data-step="2" data-time="~2 minutes">
+            <h3 class="form__title">Step 2: Your Goals</h3>
+            <p class="form__meta">Estimated time: ~2 minutes</p>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">What kind of support do you want?</h4>
+              <div class="field__checks" data-required-group="mentee_goals">
+                <p class="field__label">Choose one or more <span class="field__tag field__tag--required">Required</span></p>
+                <label class="field__check"><input type="checkbox" name="support_needs" value="Career guidance" /> <span>Career guidance</span></label>
+                <label class="field__check"><input type="checkbox" name="support_needs" value="Academic support" /> <span>Academic support</span></label>
+                <label class="field__check"><input type="checkbox" name="support_needs" value="Resume and interviews" /> <span>Resume and interviews</span></label>
+                <label class="field__check"><input type="checkbox" name="support_needs" value="Confidence building" /> <span>Confidence building</span></label>
+                <label class="field__check"><input type="checkbox" name="support_needs" value="Networking" /> <span>Networking</span></label>
+                <label class="field__check"><input type="checkbox" name="support_needs" value="Other" /> <span>Other</span></label>
+                <p class="field__error">Please choose at least one area.</p>
+              </div>
+              <label class="field">
+                <span class="field__label">If other, share details <span class="field__tag">Optional</span></span>
+                <input class="field__input" type="text" name="support_other" placeholder="Tell us what you are looking for" />
+              </label>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Reflective question</h4>
+              <label class="field">
+                <span class="field__label">What do you hope to get out of this experience? <span class="field__tag">Optional</span></span>
+                <textarea class="field__input field__input--area" name="mentee_goals" rows="3" placeholder="Example: Build confidence and explore career paths."></textarea>
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--secondary btn--lg" type="button" data-prev>Back</button>
+              <button class="btn btn--primary btn--lg" type="button" data-next>Continue</button>
+            </div>
+          </div>
+
+          <div class="form__step" data-step="3" data-time="~1 minute">
+            <h3 class="form__title">Step 3: Availability and Preferences</h3>
+            <p class="form__meta">Estimated time: ~1 minute</p>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Your availability</h4>
+              <div class="field__checks" data-required-group="mentee_days">
+                <p class="field__label">Days available <span class="field__tag field__tag--required">Required</span></p>
+                <label class="field__check"><input type="checkbox" name="availability_days" value="Weekdays" /> <span>Weekdays</span></label>
+                <label class="field__check"><input type="checkbox" name="availability_days" value="Weekends" /> <span>Weekends</span></label>
+                <label class="field__check"><input type="checkbox" name="availability_days" value="Flexible" /> <span>Flexible</span></label>
+                <p class="field__error">Please select at least one option.</p>
+              </div>
+              <div class="field__checks" data-required-group="mentee_times">
+                <p class="field__label">Time of day <span class="field__tag field__tag--required">Required</span></p>
+                <label class="field__check"><input type="checkbox" name="availability_times" value="Morning" /> <span>Morning</span></label>
+                <label class="field__check"><input type="checkbox" name="availability_times" value="Afternoon" /> <span>Afternoon</span></label>
+                <label class="field__check"><input type="checkbox" name="availability_times" value="Evening" /> <span>Evening</span></label>
+                <p class="field__error">Please select at least one option.</p>
+              </div>
+              <label class="field">
+                <span class="field__label">Preferred frequency <span class="field__tag field__tag--required">Required</span></span>
+                <select class="field__input" name="availability_frequency" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Weekly</option>
+                  <option>Biweekly</option>
+                  <option>Monthly</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form__group">
+              <h4 class="form__groupTitle">Reflective question</h4>
+              <label class="field">
+                <span class="field__label">What does mentorship mean to you? <span class="field__tag">Optional</span></span>
+                <textarea class="field__input field__input--area" name="mentorship_meaning" rows="3" placeholder="Example: Having someone who helps me stay motivated and plan next steps."></textarea>
+              </label>
+            </div>
+
+            <div class="form__callout">
+              <p><strong>After you submit:</strong> We will review your application and reach out with next steps within 5-7 business days.</p>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--secondary btn--lg" type="button" data-prev>Back</button>
+              <button class="btn btn--primary btn--lg" type="submit">Submit Mentee Application</button>
+            </div>
+            <p class="form__note" id="menteeFormNote" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="form__overlay" id="menteeConfirm" role="dialog" aria-modal="true" aria-labelledby="menteeConfirmTitle" hidden>
+      <div class="form__modal">
+        <h3 id="menteeConfirmTitle">Thank you for applying!</h3>
+        <p>We received your mentee application. Our team will reach out with next steps within 5-7 business days.</p>
+        <p>Questions? Email <a href="mailto:sac.pathways@gmail.com">sac.pathways@gmail.com</a>.</p>
+        <div class="form__modalActions">
+          <button class="btn btn--primary btn--lg" type="button" data-modal-close>Done</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+    <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__section footer__section--brand">
+      <img class="footer__logoImage" src="../assets/Logo.png" alt="Sac Pathways logo" />
+      <p class="footer__logo">Sac Pathways</p>
+      <p class="footer__mission">Sac Pathways connects students with mentorship, opportunity, and community to build confident futures.</p>
+      
+      <p class="footer__proof">Trusted by mentors, alumni, and local partners.</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Sac Pathways. All rights reserved.</p>
+    </div>
+
+    <div class="footer__section footer__section--social">
+      <div class="footer__links" aria-label="Social">
+        <a class="footer__link" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H8v4h2v6h4v-6h3l1-4h-4V8c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5H3v11h3.5v-11Zm.2-3.6A2.1 2.1 0 0 0 4.6 3.8a2.1 2.1 0 0 0-.1 3 2.1 2.1 0 0 0 3 0c.8-.8.8-2.2-.1-3Zm6.8 3.6H10v11h3.5v-6.1c0-1.6.8-2.6 2.1-2.6 1.2 0 1.9.9 1.9 2.6v6.1H21v-7c0-2.8-1.5-4.3-3.8-4.3-1.7 0-2.8.8-3.4 1.9V9.5Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Zm8 2H8a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-4 3.3A2.7 2.7 0 1 1 9.3 12 2.7 2.7 0 0 1 12 9.3Zm0 1.4A1.3 1.3 0 1 0 13.3 12 1.3 1.3 0 0 0 12 10.7Zm3.5-3.7a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Z"/></svg>
+        </a>
+      </div>
+      <div class="footer__col footer__accordion">
+        <details class="footer__details">
+          <summary class="footer__summary">Quick Links</summary>
+          <ul class="footer__list">
+            <li><a class="footer__linkText" href="#home">Home</a></li>
+            <li><a class="footer__linkText" href="../about/about.html">About Us</a></li>
+            <li><a class="footer__linkText" href="../events/events.html#event-details">Events</a></li>
+            <li><a class="footer__linkText" href="../sponsor/sponsor.html">Sponsor Us</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="footer__section footer__section--mentors">
+      <h3 class="footer__title">Mentors and Volunteers</h3>
+      <ul class="footer__list">
+        <li><a class="footer__linkText" href="../get-involved/get-involved.html">Become a Mentor</a></li>
+        <li><a class="footer__linkText" href="../mentee/mentee.html">Register as Mentee</a></li>
+        <li><a class="footer__linkText" href="../get-involved/get-involved.html">Partner With Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section footer__section--newsletter">
+      <h3 class="footer__title">Newsletter</h3>
+      <p class="footer__headline">Stay Connected With Sac Pathways</p>
+      <p class="footer__contact">Contact: <a class="footer__linkText" href="mailto:sac.pathways@gmail.com">sac.pathways@gmail.com</a></p>
+      <p class="footer__text">Get updates, events, and mentorship stories.</p>
+      <form class="footer__form" action="" method="post">
+        <input class="footer__input" type="email" name="newsletter_email" placeholder="Email address" aria-label="Email address" required />
+        <button class="btn btn--primary btn--sm" type="submit">Subscribe</button>
+      </form>
+      <p class="footer__note">No spam. 1-2 emails/month.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="./script-mentee.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

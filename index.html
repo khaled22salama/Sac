@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sac Pathways - Mentorship for Student Success</title>
+  <link rel="icon" type="image/png" href="./assets/Logo.png" />
+  <meta name="description" content="Integrating mentorship into student life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles-index.css" />
+</head>
+<body>
+  <!-- Top bar / navigation -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#">
+        <img class="brand__logo" src="./assets/Logo.png" alt="Sac Pathways logo" />
+        <span class="sr-only">Sac Pathways</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav__hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link nav__link--active" href="#home">Home</a></li>
+          <li><a class="nav__link" href="./about/about.html">About Us</a></li>
+          <li><a class="nav__link" href="./events/events.html#event-details">Events</a></li>
+          <li><a class="nav__link" href="./get-involved/get-involved.html">Mentors and Volunteers</a></li>
+          <li><a class="nav__link" href="./sponsor/sponsor.html">Sponsor Us</a></li>
+          <li class="nav__cta">
+            <a class="btn btn--primary" href="./mentee/mentee.html">Register as Mentee</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="hero__bg" role="img" aria-label="Students and mentor in a classroom"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span>Welcome to</span>
+            <span class="hero__titleAccent">Sac Pathways</span>
+          </h1>
+          <p class="hero__subtitle">Integrating mentorship into student life</p>
+          <p class="hero__subheadline">Sac Pathways connects students with mentors, resources, and opportunities that create real impact.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="./mentee/mentee.html">Register as Mentee</a>
+            <a class="hero__link" href="./get-involved/get-involved.html">Become a Mentor</a>
+          </div>
+          <p class="hero__pill">Mentorship - Opportunity - Community</p>
+        </div>
+      </div>
+      <div class="hero__wave" aria-hidden="true"></div>
+    </section>
+
+
+    <section class="section who" id="who">
+      <div class="container">
+        <h2 class="sectionTitle sectionTitle--left">Who Is This For?</h2>
+        <div class="who__grid">
+          <a class="who__card" href="./mentee/mentee.html">I'm a Student <span aria-hidden="true">-></span></a>
+          <a class="who__card" href="./get-involved/get-involved.html">I'm a Mentor <span aria-hidden="true">-></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help Students -->
+    <section class="help" id="programs">
+      <div class="container">
+        <p class="sectionKick sectionKick--left">Our Impact Areas</p>
+        <h2 class="sectionTitle sectionTitle--left">How We Help Students Succeed</h2>
+
+        <div class="help__grid">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <!-- handshake icon -->
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 12l2 2c1 1 2.5 1 3.5 0l5.5-5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 11l6-6 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 11l-6-6-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 17l1 1c1 1 2.5 1 3.5 0l.5-.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Professional Mentorship</h3>
+            <p class="card__text">
+              Connect students with mentors for guidance,
+              goal-setting, and confidence.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <!-- growth icon -->
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17 20V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17 6l-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17 6h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Personal Development</h3>
+            <p class="card__text">
+              Build communication and leadership skills
+              through structured check-ins.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <!-- lightbulb icon -->
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 22h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Access & Opportunity</h3>
+            <p class="card__text">
+              Open doors to scholarships and internships
+              through trusted networks.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="help__wave" aria-hidden="true"></div>
+    </section>
+
+        <!-- Student Journey -->
+    <section class="section journey" id="journey">
+      <div class="container">
+        <p class="sectionKick sectionKick--left">Student Journey Flow</p>
+        <h2 class="sectionTitle sectionTitle--left">A Student's Path with Sac Pathways</h2>
+        <p class="journey__intro">Getting started with Sac Pathways is simple. Here's how we support students every step of the way.</p>
+
+        <div class="journey__flow">
+          <article class="journey__step">
+            <div class="journey__icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16v10H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 4h8v2H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 16v4h8v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="journey__stepLabel">Step 1 - Sign Up</p>
+            <h3 class="journey__title">Create Your Profile</h3>
+            <p class="journey__desc">Tell us about your goals, interests, and what support you're looking for.</p>
+          </article>
+
+          <article class="journey__step">
+            <div class="journey__icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 20a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="journey__stepLabel">Step 2 - Get Matched</p>
+            <h3 class="journey__title">Match with a Mentor</h3>
+            <p class="journey__desc">We connect you with a mentor who aligns with your academic and career goals.</p>
+          </article>
+
+          <article class="journey__step">
+            <div class="journey__icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 19V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17 19v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="journey__stepLabel">Step 3 - Grow &amp; Learn</p>
+            <h3 class="journey__title">Learn &amp; Connect</h3>
+            <p class="journey__desc">Meet regularly, gain guidance, and access resources that support your journey.</p>
+          </article>
+
+          <article class="journey__step">
+            <div class="journey__icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 21l7-5 7 5V9H5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="journey__stepLabel">Step 4 - Move Forward</p>
+            <h3 class="journey__title">Build Your Future</h3>
+            <p class="journey__desc">Apply what you've learned with confidence in school, work, and beyond.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+<!-- Events -->
+
+
+
+
+    <section class="section cta-journey" aria-label="Start your journey">
+      <div class="container cta-journey__inner">
+        <div class="cta-journey__copy">
+          <p class="cta-journey__title">Start in 2 minutes</p>
+          <p class="cta-journey__text">Get matched with a mentor who aligns with your goals.</p>
+        </div>
+        <div class="cta-journey__actions">
+          <a class="btn btn--primary btn--lg" href="./mentee/mentee.html">Start in 2 minutes</a>
+          <a class="btn btn--secondary btn--lg" href="./about/about.html">How matching works</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__section footer__section--brand">
+      <img class="footer__logoImage" src="./assets/Logo.png" alt="Sac Pathways logo" />
+      <p class="footer__logo">Sac Pathways</p>
+      <p class="footer__mission">Sac Pathways connects students with mentorship, opportunity, and community to build confident futures.</p>
+      
+      <p class="footer__proof">Trusted by mentors, alumni, and local partners.</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Sac Pathways. All rights reserved.</p>
+    </div>
+
+    <div class="footer__section footer__section--social">
+      <div class="footer__links" aria-label="Social">
+        <a class="footer__link" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H8v4h2v6h4v-6h3l1-4h-4V8c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5H3v11h3.5v-11Zm.2-3.6A2.1 2.1 0 0 0 4.6 3.8a2.1 2.1 0 0 0-.1 3 2.1 2.1 0 0 0 3 0c.8-.8.8-2.2-.1-3Zm6.8 3.6H10v11h3.5v-6.1c0-1.6.8-2.6 2.1-2.6 1.2 0 1.9.9 1.9 2.6v6.1H21v-7c0-2.8-1.5-4.3-3.8-4.3-1.7 0-2.8.8-3.4 1.9V9.5Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Zm8 2H8a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-4 3.3A2.7 2.7 0 1 1 9.3 12 2.7 2.7 0 0 1 12 9.3Zm0 1.4A1.3 1.3 0 1 0 13.3 12 1.3 1.3 0 0 0 12 10.7Zm3.5-3.7a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Z"/></svg>
+        </a>
+      </div>
+      <div class="footer__col footer__accordion">
+        <details class="footer__details">
+          <summary class="footer__summary">Quick Links</summary>
+          <ul class="footer__list">
+            <li><a class="footer__linkText" href="#home">Home</a></li>
+            <li><a class="footer__linkText" href="./about/about.html">About Us</a></li>
+            <li><a class="footer__linkText" href="./events/events.html#event-details">Events</a></li>
+            <li><a class="footer__linkText" href="./sponsor/sponsor.html">Sponsor Us</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="footer__section footer__section--mentors">
+      <h3 class="footer__title">Mentors and Volunteers</h3>
+      <ul class="footer__list">
+        <li><a class="footer__linkText" href="./get-involved/get-involved.html">Become a Mentor</a></li>
+        <li><a class="footer__linkText" href="./mentee/mentee.html">Register as Mentee</a></li>
+        <li><a class="footer__linkText" href="./get-involved/get-involved.html">Partner With Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section footer__section--newsletter">
+      <h3 class="footer__title">Newsletter</h3>
+      <p class="footer__headline">Stay Connected With Sac Pathways</p>
+      <p class="footer__contact">Contact: <a class="footer__linkText" href="mailto:sac.pathways@gmail.com">sac.pathways@gmail.com</a></p>
+      <p class="footer__text">Get updates, events, and mentorship stories.</p>
+      <form class="footer__form" action="" method="post">
+        <input class="footer__input" type="email" name="newsletter_email" placeholder="Email address" aria-label="Email address" required />
+        <button class="btn btn--primary btn--sm" type="submit">Subscribe</button>
+      </form>
+      <p class="footer__note">No spam. 1-2 emails/month.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="./script-index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
