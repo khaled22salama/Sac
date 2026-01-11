@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events • Sac Pathways</title>
+  <link rel="icon" type="image/png" href="../assets/Logo.png" />
+  <meta name="description" content="Upcoming events for the Sac Pathways mentorship program." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles-events.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html#home">
+        <img class="brand__logo" src="../assets/Logo.png" alt="Sac Pathways logo" />
+        <span class="sr-only">Sac Pathways</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav__hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="../index.html#home">Home</a></li>
+          <li><a class="nav__link" href="../about/about.html">About Us</a></li>
+          <li><a class="nav__link nav__link--active" href="../events/events.html#event-details">Events</a></li>
+          <li><a class="nav__link" href="../get-involved/get-involved.html">Mentors and Volunteers</a></li>
+          <li><a class="nav__link" href="../sponsor/sponsor.html">Sponsor Us</a></li>
+          <li class="nav__cta">
+            <a class="btn btn--primary" href="../mentee/mentee.html">Register as Mentee</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Events -->
+    
+
+    <!-- Event details -->
+    
+    
+    <section class="section" id="event-details">
+      <div class="container">
+        <h2 class="sectionTitle">Event Details</h2>
+        <p class="sectionKick">Join upcoming workshops, orientations, and networking events.</p>
+        <p class="event__reassure">Free events - Open to students and mentors</p>
+
+        <div class="events__headerRow">
+          <div class="events__monthNav" role="group" aria-label="Month navigation">
+            <button class="events__monthBtn" type="button" aria-label="Previous month">Prev</button>
+            <span class="events__monthLabel">This Month</span>
+            <button class="events__monthBtn" type="button" aria-label="Next month">Next</button>
+          </div>
+          <div class="event__filters event__filters--desktop" role="group" aria-label="Event filters">
+            <button class="event__filter is-active" type="button" data-filter="all">All</button>
+            <button class="event__filter" type="button" data-filter="online">Online</button>
+            <button class="event__filter" type="button" data-filter="in-person">In-Person</button>
+            <button class="event__filter" type="button" data-filter="career">Career</button>
+            <button class="event__filter" type="button" data-filter="networking">Networking</button>
+            <button class="event__filter" type="button" data-filter="mentor-only">Mentor-Only</button>
+          </div>
+        </div>
+
+        <div class="event__filters event__filters--mobile" role="group" aria-label="Event filters">
+          <button class="event__filter is-active" type="button" data-filter="all">All</button>
+          <button class="event__filter" type="button" data-filter="online">Online</button>
+          <button class="event__filter" type="button" data-filter="in-person">In-Person</button>
+          <button class="event__filter" type="button" data-filter="career">Career</button>
+          <button class="event__filter" type="button" data-filter="networking">Networking</button>
+          <button class="event__filter" type="button" data-filter="mentor-only">Mentor-Only</button>
+        </div>
+
+        <div class="events-layout">
+          <div class="events-main">
+            <div class="events">
+              <article class="event" tabindex="0" id="event-mentor-orientation" data-tags="online mentor-only">
+                <div class="event__dateWrap">
+                  <button class="event__date" type="button" aria-label="Event date January 18. Open calendar options." data-date="2025-01-18" data-time="18:00" data-title="Mentor Orientation">
+                    <span class="event__month">JAN</span>
+                    <span class="event__day">18</span>
+                  </button>
+                  <div class="event__dateMenu" hidden>
+                    <a class="event__dateLink" href="#" data-calendar-action="add">Add to Calendar</a>
+                    <a class="event__dateLink" href="#" data-calendar-action="month">View Month</a>
+                  </div>
+                </div>
+                <div class="event__body">
+                  <h3 class="event__title">Mentor Orientation</h3>
+                  <div class="event__row">
+                    <p class="event__meta event__meta--time"><span class="event__metaStrong">6:00 PM</span></p>
+                    <p class="event__meta event__meta--place"><span class="event__metaStrong">Virtual</span> <span class="event__badge event__badge--online"><span aria-hidden="true">O</span> Online</span></p>
+                    <div class="event__cta">
+                      <a class="btn btn--primary btn--sm" href="#" aria-label="Attend and support Mentor Orientation">Attend &amp; Support</a>
+                    </div>
+                  </div>
+                  <p class="event__meta event__meta--audience"><span class="event__who">For Mentors</span> <span class="event__capacity">Limited spots</span></p>
+                  <div class="speakers speakers--scroll">
+                    <div class="speaker">
+                      <div class="speaker__avatar" tabindex="0" aria-label="Bio: Program director focused on mentor onboarding." data-bio="Program director focused on mentor onboarding." data-name="Alicia Lee">AL</div>
+                      <div>
+                        <p class="speaker__name">Alicia Lee</p>
+                        <p class="speaker__role">Program Director</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="event__preview">Onboarding overview and what to expect as a mentor.</p>
+                  <details class="event__details">
+                    <summary class="event__summary">View Details</summary>
+                    <p class="event__full">Kickoff for new mentors: expectations, onboarding, and resources to support your mentees.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="event" tabindex="0" id="event-career-readiness" data-tags="in-person career students">
+                <div class="event__dateWrap">
+                  <button class="event__date" type="button" aria-label="Event date February 8. Open calendar options." data-date="2025-02-08" data-time="16:30" data-title="Career Readiness Workshop">
+                    <span class="event__month">FEB</span>
+                    <span class="event__day">08</span>
+                  </button>
+                  <div class="event__dateMenu" hidden>
+                    <a class="event__dateLink" href="#" data-calendar-action="add">Add to Calendar</a>
+                    <a class="event__dateLink" href="#" data-calendar-action="month">View Month</a>
+                  </div>
+                </div>
+                <div class="event__body">
+                  <h3 class="event__title">Career Readiness Workshop</h3>
+                  <div class="event__row">
+                    <p class="event__meta event__meta--time"><span class="event__metaStrong">4:30 PM</span></p>
+                    <p class="event__meta event__meta--place"><span class="event__metaStrong">Campus Center</span> <span class="event__badge event__badge--inperson"><span aria-hidden="true">IP</span> In-Person</span></p>
+                    <div class="event__cta">
+                      <a class="btn btn--primary btn--sm" href="#" aria-label="Reserve your spot for Career Readiness Workshop">Reserve Your Spot</a>
+                    </div>
+                  </div>
+                  <p class="event__meta event__meta--audience"><span class="event__who">For Students</span> <span class="event__capacity event__capacity--open">Spots available</span></p>
+                  <div class="speakers speakers--scroll">
+                    <div class="speaker">
+                      <div class="speaker__avatar" tabindex="0" aria-label="Bio: Career coach helping students prepare for interviews." data-bio="Career coach helping students prepare for interviews." data-name="Jordan Malik">JM</div>
+                      <div>
+                        <p class="speaker__name">Jordan Malik</p>
+                        <p class="speaker__role">Career Coach</p>
+                      </div>
+                    </div>
+                    <div class="speaker">
+                      <div class="speaker__avatar" tabindex="0" aria-label="Bio: Alumni mentor sharing internship insights." data-bio="Alumni mentor sharing internship insights." data-name="Rita Singh">RS</div>
+                      <div>
+                        <p class="speaker__name">Rita Singh</p>
+                        <p class="speaker__role">Alumni Mentor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="event__preview">Resume and interview prep with mentor feedback.</p>
+                  <details class="event__details">
+                    <summary class="event__summary">View Details</summary>
+                    <p class="event__full">Hands-on resume and interview prep with mock sessions and mentor feedback.</p>
+                  </details>
+                </div>
+              </article>
+
+              <article class="event" tabindex="0" id="event-networking" data-tags="in-person networking open">
+                <div class="event__dateWrap">
+                  <button class="event__date" type="button" aria-label="Event date March 5. Open calendar options." data-date="2025-03-05" data-time="17:00" data-title="Student + Mentor Networking">
+                    <span class="event__month">MAR</span>
+                    <span class="event__day">05</span>
+                  </button>
+                  <div class="event__dateMenu" hidden>
+                    <a class="event__dateLink" href="#" data-calendar-action="add">Add to Calendar</a>
+                    <a class="event__dateLink" href="#" data-calendar-action="month">View Month</a>
+                  </div>
+                </div>
+                <div class="event__body">
+                  <h3 class="event__title">Student + Mentor Networking</h3>
+                  <div class="event__row">
+                    <p class="event__meta event__meta--time"><span class="event__metaStrong">5:00 PM</span></p>
+                    <p class="event__meta event__meta--place"><span class="event__metaStrong">Downtown Hub</span> <span class="event__badge event__badge--inperson"><span aria-hidden="true">IP</span> In-Person</span></p>
+                    <div class="event__cta">
+                      <a class="btn btn--primary btn--sm" href="#" aria-label="RSVP for Student + Mentor Networking">RSVP</a>
+                    </div>
+                  </div>
+                  <p class="event__meta event__meta--audience"><span class="event__who">Open to All</span> <span class="event__capacity event__capacity--warn">Almost full</span></p>
+                  <div class="speakers speakers--scroll">
+                    <div class="speaker">
+                      <div class="speaker__avatar" tabindex="0" aria-label="Bio: Community lead connecting mentors and students." data-bio="Community lead connecting mentors and students." data-name="Carla Tran">CT</div>
+                      <div>
+                        <p class="speaker__name">Carla Tran</p>
+                        <p class="speaker__role">Community Lead</p>
+                      </div>
+                    </div>
+                    <div class="speaker">
+                      <div class="speaker__avatar" tabindex="0" aria-label="Bio: Industry mentor guiding professional growth." data-bio="Industry mentor guiding professional growth." data-name="Devon Harris">DH</div>
+                      <div>
+                        <p class="speaker__name">Devon Harris</p>
+                        <p class="speaker__role">Industry Mentor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="event__preview">Mixer with mentor spotlights and breakout tables.</p>
+                  <details class="event__details">
+                    <summary class="event__summary">View Details</summary>
+                    <p class="event__full">Networking mixer with speed intros, mentor spotlights, and breakout tables by interest.</p>
+                  </details>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="events-aside">
+            <div class="events__panel">
+              <h3 class="events__panelTitle">Event Filters</h3>
+              <div class="event__filters event__filters--side" role="group" aria-label="Event filters">
+                <button class="event__filter is-active" type="button" data-filter="all">All</button>
+                <button class="event__filter" type="button" data-filter="online">Online</button>
+                <button class="event__filter" type="button" data-filter="in-person">In-Person</button>
+                <button class="event__filter" type="button" data-filter="career">Career</button>
+                <button class="event__filter" type="button" data-filter="networking">Networking</button>
+                <button class="event__filter" type="button" data-filter="mentor-only">Mentor-Only</button>
+              </div>
+            </div>
+
+            <div class="events__panel">
+              <h3 class="events__panelTitle">Upcoming this month</h3>
+              <ul class="events__list">
+                <li>Mentor Orientation - Jan 18</li>
+                <li>Career Readiness Workshop - Feb 8</li>
+                <li>Student + Mentor Networking - Mar 5</li>
+              </ul>
+            </div>
+
+            <div class="events__panel">
+              <h3 class="events__panelTitle">Quick links</h3>
+              <div class="events__links">
+                <a class="btn btn--secondary btn--sm" href="../get-involved/get-involved.html">Register as Mentor</a>
+                <a class="btn btn--secondary btn--sm" href="../mentee/mentee.html">Register as Mentee</a>
+              </div>
+            </div>
+
+            <div class="events__panel events__panel--preview">
+              <h3 class="events__panelTitle">Calendar preview</h3>
+              <p class="events__panelText">A calendar view is coming soon. For now, use the date badge to add events.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <div class="events__modal" id="speakerModal" role="dialog" aria-modal="true" aria-labelledby="speakerModalTitle" hidden>
+    <div class="events__modalCard">
+      <p class="events__modalTitle" id="speakerModalTitle"></p>
+      <p class="events__modalText" id="speakerModalText"></p>
+      <button class="btn btn--secondary btn--sm" type="button" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <div class="events__stickyCta" role="region" aria-label="Upcoming events">
+    <a class="btn btn--primary btn--block" href="#event-details" aria-label="View upcoming events">View Upcoming Events</a>
+  </div>
+
+    <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__section footer__section--brand">
+      <img class="footer__logoImage" src="../assets/Logo.png" alt="Sac Pathways logo" />
+      <p class="footer__logo">Sac Pathways</p>
+      <p class="footer__mission">Sac Pathways connects students with mentorship, opportunity, and community to build confident futures.</p>
+      
+      <p class="footer__proof">Trusted by mentors, alumni, and local partners.</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Sac Pathways. All rights reserved.</p>
+    </div>
+
+    <div class="footer__section footer__section--social">
+      <div class="footer__links" aria-label="Social">
+        <a class="footer__link" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H8v4h2v6h4v-6h3l1-4h-4V8c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5H3v11h3.5v-11Zm.2-3.6A2.1 2.1 0 0 0 4.6 3.8a2.1 2.1 0 0 0-.1 3 2.1 2.1 0 0 0 3 0c.8-.8.8-2.2-.1-3Zm6.8 3.6H10v11h3.5v-6.1c0-1.6.8-2.6 2.1-2.6 1.2 0 1.9.9 1.9 2.6v6.1H21v-7c0-2.8-1.5-4.3-3.8-4.3-1.7 0-2.8.8-3.4 1.9V9.5Z"/></svg>
+        </a>
+        <a class="footer__link" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Zm8 2H8a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-4 3.3A2.7 2.7 0 1 1 9.3 12 2.7 2.7 0 0 1 12 9.3Zm0 1.4A1.3 1.3 0 1 0 13.3 12 1.3 1.3 0 0 0 12 10.7Zm3.5-3.7a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Z"/></svg>
+        </a>
+      </div>
+      <div class="footer__col footer__accordion">
+        <details class="footer__details">
+          <summary class="footer__summary">Quick Links</summary>
+          <ul class="footer__list">
+            <li><a class="footer__linkText" href="#home">Home</a></li>
+            <li><a class="footer__linkText" href="../about/about.html">About Us</a></li>
+            <li><a class="footer__linkText" href="../events/events.html#event-details">Events</a></li>
+            <li><a class="footer__linkText" href="../sponsor/sponsor.html">Sponsor Us</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="footer__section footer__section--mentors">
+      <h3 class="footer__title">Mentors and Volunteers</h3>
+      <ul class="footer__list">
+        <li><a class="footer__linkText" href="../get-involved/get-involved.html">Become a Mentor</a></li>
+        <li><a class="footer__linkText" href="../mentee/mentee.html">Register as Mentee</a></li>
+        <li><a class="footer__linkText" href="../get-involved/get-involved.html">Partner With Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section footer__section--newsletter">
+      <h3 class="footer__title">Newsletter</h3>
+      <p class="footer__headline">Stay Connected With Sac Pathways</p>
+      <p class="footer__contact">Contact: <a class="footer__linkText" href="mailto:sac.pathways@gmail.com">sac.pathways@gmail.com</a></p>
+      <p class="footer__text">Get updates, events, and mentorship stories.</p>
+      <form class="footer__form" action="" method="post">
+        <input class="footer__input" type="email" name="newsletter_email" placeholder="Email address" aria-label="Email address" required />
+        <button class="btn btn--primary btn--sm" type="submit">Subscribe</button>
+      </form>
+      <p class="footer__note">No spam. 1-2 emails/month.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="./script-events.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
